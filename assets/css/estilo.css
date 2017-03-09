@@ -1,0 +1,87 @@
+.fix-bug-target{/*Correção de bug 'collapse' e 'data-target' do bootstrap que não funcionava no navegador Safari*/
+	cursor: pointer;
+}
+#paineis-sobre{
+	margin-top:	20px;
+}
+.div-depoimentos{
+	background: #0275d8;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 0;
+}
+.div-depoimentos h2{
+	color: #fff; 
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.contato-select,.grupo-radio{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.grupo-radio .radio:first-child{
+	margin-top: 0;
+}
+html, body{
+	height: 100%;
+}
+header{
+	background-image: url('../img/castelo.jpg');
+	height: 100%;
+	background-size: cover;
+	background-position: top center;
+
+}
+.topCasaFina-banner{
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	width: 80%;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* colocando prefixos no IOS4*/
+	-webkit-transform: translate(-50%, -50%);
+	transition: 0.3s;
+}
+.topCasaFina-banner h1{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@media(min-width: 768px){
+	.colunas-2{
+		width: 50%;
+		float: left;
+	}
+	#paineis-sobre{
+		margin-top: 0;
+	}	
+}
+@media(min-width: 992px){
+	.topCasaFina-banner {
+		left: 0;
+		transform: translate(0, -80%);
+		/* colocando prefixos no IOS4*/
+		-webkit-transform: translate(0, -80%);
+		width: 50%;
+	}
+
+	.topCasaFina-bannerWrapper {
+		position: relative;
+		height: 100%;
+	}
+}
+
+footer{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin-top: 10px;
+}
+footer address:last-child{
+	margin-bottom: 0;
+}
